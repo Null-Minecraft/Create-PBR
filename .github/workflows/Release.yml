@@ -69,12 +69,10 @@ jobs:
           modrinth-files-secondary: Create-LabPBR-WoodTracks-v${{ github.run_number }}.zip
           curseforge-token: ${{ secrets.CF_API_TOKEN }}
           curseforge-id: 682954
-          curseforge-loaders: |
+          loaders: |
             fabric
             forge
             quilt
           files: |
             Create-LabPBR-v${{ github.run_number }}.zip
             Create-LabPBR-WoodTracks-v${{ github.run_number }}.zip
-          game-versions: |
-            >=1.16.5
