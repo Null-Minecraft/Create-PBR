@@ -55,27 +55,23 @@ jobs:
           asset_path: ./Create-LabPBR-WoodTracks-v${{ github.run_number }}.zip
           asset_name: Create-LabPBR-WoodTracks-v${{ github.run_number }}.zip
           asset_content_type: application/zip
-      - name: Publish Wood-Tracks LabPBR to CurseForge
-        uses: itsmeow/curseforge-upload@v3
-        #if: github.event.inputs.publish_curseforge == 'true'
+      - name: Publish to CurseForge, Modrinth
+        uses: Kir-Antipov/mc-publish@v3.3
         with:
-          display_name: Create LabPBR Wood-Tracks v${{ github.run_number }}
-          file_path: Create-LabPBR-WoodTracks-v${{ github.run_number }}.zip
-          changelog: "###Release ${{ github.run_number }}\n..."
-          release_type: beta
-          project_id: 682954
-          game_endpoint: minecraft
-          game_versions: "9366,9259,9186,9008,8857,8830,8203"
-          token: ${{ secrets.CF_API_TOKEN }}
-      - name: Publish LabPBR to CurseForge
-        uses: itsmeow/curseforge-upload@v3
-        #if: github.event.inputs.publish_curseforge == 'true'
-        with:
-          display_name: Create LabPBR v${{ github.run_number }}
-          file_path: Create-LabPBR-v${{ github.run_number }}.zip
-          changelog: "###Release ${{ github.run_number }}\n..."
-          release_type: beta
-          project_id: 682954
-          game_endpoint: minecraft
-          game_versions: "9366,9259,9186,9008,8857,8830,8203"
-          token: ${{ secrets.CF_API_TOKEN }}
+          name: Create-LabPBR v${{ github.run_number }}
+          version: v${{ github.run_number }}
+          version-type: beta
+          changelog: "###Release v${{ github.run_number }}"
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          modrinth-id: CFeoJnHX
+          curseforge-token: ${{ secrets.CF_API_TOKEN }}
+          curseforge-id: 682954
+          files: |
+            Create-LabPBR-v${{ github.run_number }}.zip
+            Create-LabPBR-WoodTracks-v${{ github.run_number }}.zip
+          loaders: |
+            fabric
+            forge
+            quilt
+          game-versions: |
+            >=1.16.5
