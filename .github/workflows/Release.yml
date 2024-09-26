@@ -60,18 +60,12 @@ jobs:
         with:
           name: Create-LabPBR v${{ github.run_number }}
           version: v${{ github.run_number }}
-          version-type: beta
           changelog: "###Release v${{ github.run_number }}"
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           modrinth-id: CFeoJnHX
+          modrinth-featured: true
           curseforge-token: ${{ secrets.CF_API_TOKEN }}
           curseforge-id: 682954
           files: |
             Create-LabPBR-v${{ github.run_number }}.zip
             Create-LabPBR-WoodTracks-v${{ github.run_number }}.zip
-          loaders: |
-            fabric
-            forge
-            quilt
-          game-versions: |
-            >=1.16.5
