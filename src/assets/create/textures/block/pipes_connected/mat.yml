@@ -1,6 +1,10 @@
 texture-size: 32
-smooth:
-  value: 0.5
+wrap-x: false
+wrap-y: false
+normal:
+  noise: 1
+  method: sobel-low
+  strength: 2
 hcm:
   value: 234
 filters:
@@ -44,3 +48,41 @@ filters:
   width: 0.25
   height: 0.25
   normal-curve-y: 90
+- name: '?'
+  left: 0.5
+  top: 0.5
+  width: 0.25
+  height: 0.25
+- name: cap
+  left: 0.75
+  top: 0.5
+  width: 0.25
+  height: 0.25
+- name: north-west
+  left: 0.5
+  top: 0
+  width: 0.25
+  height: 0.25
+  normal-curve-left: 45
+  normal-curve-top: 45
+- name: north-east
+  left: 0.75
+  top: 0
+  width: 0.25
+  height: 0.25
+  normal-curve-right: 45
+  normal-curve-top: 45
+- name: south-west
+  left: 0.5
+  top: 0.25
+  width: 0.25
+  height: 0.25
+  normal-curve-left: 45
+  normal-curve-bottom: 45
+- name: south-east
+  left: 0.75
+  top: 0.25
+  width: 0.25
+  height: 0.25
+  normal-curve-right: 45
+  normal-curve-bottom: 45

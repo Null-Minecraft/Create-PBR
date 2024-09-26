@@ -1,50 +1,71 @@
 wrap-x: false
 wrap-y: false
-texture-size: 16
 model: create:block/valve_handle
-smooth:
-  value: 0.65
+blend-mode: cutout
+normal:
+  noise: 1
+  method: sobel-low
+  strength: 2
 filters:
-- name: curve-vertical
-  left: 0.3125
+- name: base-front
+  left: 0.625
   top: 0
   width: 0.375
-  height: 0.125
-  normal-curve-y: 90
-- name: curve-outside
-  left: 0.3125
-  top: 0.125
-  width: 0.375
-  height: 0.1875
-  normal-curve-y: 90
-- name: curve-inside
-  left: 0.3125
-  top: 0.3125
-  width: 0.375
-  height: 0.1875
-  normal-curve-y: 90
-- name: top
-  left: 0
-  top: 0
-  width: 0.3125
-  height: 0.3125
+  height: 0.375
   normal-curve-x: 90
   normal-curve-y: 90
-  normal-radius-x: 0.2
-  normal-radius-y: 0.2
-- name: side
-  left: 0
-  top: 0.3125
-  width: 0.3125
+  normal-radius-x: 0.5
+  normal-radius-y: 0.5
+- name: base-side
+  left: 0.625
+  top: 0.375
+  width: 0.375
+  height: 0.125
+  normal-curve-x: 90
+  normal-curve-y: 90
+  normal-radius-x: 0.5
+  normal-radius-y: 0.75
+- name: support
+  left: 0.4375
+  top: 0
+  width: 0.125
+  height: 0.375
+  normal-curve-x: 90
+- name: center-front
+  left: 0.0625
+  top: 0.5625
+  width: 0.25
   height: 0.25
   normal-curve-x: 90
   normal-curve-y: 90
-  normal-radius-x: 0.2
-  normal-radius-y: 0.2
-- name: support
-  left: 0.3125
-  top: 0.5
-  width: 0.1875
+  normal-radius-x: 0.6
+  normal-radius-y: 0.6
+- name: center-side
+  left: 0.0625
+  top: 0.8125
+  width: 0.25
+  height: 0.1875
+  normal-curve-x: 90
+  normal-curve-y: 90
+  normal-radius-x: 0.6
+  normal-radius-y: 0.6
+- name: rim-side
+  left: 0
+  top: 0
+  width: 0.375
   height: 0.125
   normal-curve-y: 90
-  normal-radius-y: 0.5
+- name: rim-inner
+  left: 0
+  top: 0.125
+  width: 0.375
+  height: 0.1875
+  normal-curve-x: -45
+  normal-curve-y: 90
+- name: rim-outer
+  left: 0
+  top: 0.3125
+  width: 0.375
+  height: 0.1875
+  normal-curve-x: 45
+  normal-curve-y: 90

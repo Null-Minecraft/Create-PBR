@@ -1,0 +1,37 @@
+texture-size: 32
+wrap-x: false
+wrap-y: false
+model: railways:block/light_gray_locometal_boiler_gullet_x
+normal:
+  noise: 1
+hcm:
+  value: 255
+filters:
+- name: 1
+  left: 0
+  top: 0
+  width: 0.40625
+  height: 0.5
+  tile: false
+  normal-curve-x: 45
+- name: 2
+  left: 0.5
+  top: 0
+  width: 0.40625
+  height: 0.5
+  tile: false
+  normal-curve-x: 45
+- name: 3
+  left: 0
+  top: 0.5
+  width: 0.40625
+  height: 0.5
+  tile: false
+  normal-curve-x: 45
+- name: 4
+  left: 0.5
+  top: 0.5
+  width: 0.40625
+  height: 0.5
+  tile: false
+  normal-curve-x: 45

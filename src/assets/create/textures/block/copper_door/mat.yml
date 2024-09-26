@@ -1,0 +1,20 @@
+wrap-x: false
+wrap-y: false
+blend-mode: cutout
+normal:
+  noise: 1.5
+  method: sobel-low
+  strength: 4
+f0:
+  value: 0.04
+parts:
+- name: copper_door_top
+  left: 0
+  top: 0
+  width: 16
+  height: 16
+- name: copper_door_bottom
+  left: 0
+  top: 16
+  width: 16
+  height: 16

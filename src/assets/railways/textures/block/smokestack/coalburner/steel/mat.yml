@@ -1,0 +1,56 @@
+texture-size: 32
+wrap-x: false
+wrap-y: false
+model: railways:block/smokestack/block_coalburner
+normal:
+  noise: 2
+  method: sobel-high
+  strength: 2.3283
+occlusion:
+  step-distance: 0.4
+hcm:
+  value: 255
+filters:
+- name: cap-up
+  left: 0
+  top: 0.59375
+  width: 0.3125
+  height: 0.3125
+  normal-curve-x: 90
+  normal-curve-y: 90
+  normal-radius-x: 0.5
+  normal-radius-y: 0.5
+- name: cap-down
+  left: 0.3125
+  top: 0.59375
+  width: 0.3125
+  height: 0.3125
+  normal-curve-x: 90
+  normal-curve-y: 90
+  normal-radius-x: 0.5
+- name: cap-side
+  left: 0
+  top: 0.5
+  width: 0.3125
+  height: 0.09375
+  normal-curve-x: 90
+  normal-curve-y: 90
+  normal-radius-x: 0.5
+- name: top
+  left: 0.25
+  top: 0
+  width: 0.25
+  height: 0.25
+  normal-curve-x: 90
+  normal-curve-y: 90
+  normal-radius-x: 0.5
+  normal-radius-y: 0.5
+- name: side
+  left: 0
+  top: 0
+  width: 0.25
+  height: 0.5
+  normal-curve-x: 90
+  normal-curve-top: 45
+  normal-radius-x: 0.5
+  normal-radius-y: 0.2

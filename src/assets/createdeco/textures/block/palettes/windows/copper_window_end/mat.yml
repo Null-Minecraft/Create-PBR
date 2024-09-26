@@ -1,0 +1,8 @@
+wrap-x: false
+wrap-y: false
+normal:
+  noise: 1
+smooth:
+  value: 0.72
+hcm:
+  value: 234

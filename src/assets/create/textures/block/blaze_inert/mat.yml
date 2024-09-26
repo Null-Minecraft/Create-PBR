@@ -1,1 +1,3 @@
 model: create:block/blaze_burner/blaze/inert
+emissive:
+  scale: 0.3

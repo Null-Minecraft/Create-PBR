@@ -1,0 +1,7 @@
+texture-size: 128
+wrap-x: false
+wrap-y: false
+normal:
+  noise: 1
+hcm:
+  value: 255

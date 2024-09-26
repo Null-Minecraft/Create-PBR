@@ -1,0 +1,42 @@
+wrap-x: false
+wrap-y: false
+blend-mode: cutout
+normal:
+  noise: 1.5
+smooth:
+  value: 0.6
+hcm:
+  value: 255
+filters:
+- name: 1
+  left: 0
+  top: 0
+  width: 1
+  height: 0.1875
+  normal-curve-right: 45
+  normal-curve-y: 60
+  normal-radius-x: 0.2
+- name: 2
+  left: 0
+  top: 0.25
+  width: 1
+  height: 0.1875
+  normal-curve-left: 45
+  normal-curve-y: 60
+  normal-radius-x: 0.2
+- name: 3
+  left: 0
+  top: 0.5
+  width: 1
+  height: 0.1875
+  normal-curve-right: 45
+  normal-curve-y: 60
+  normal-radius-x: 0.2
+- name: 4
+  left: 0
+  top: 0.75
+  width: 1
+  height: 0.1875
+  normal-curve-left: 45
+  normal-curve-y: 60
+  normal-radius-x: 0.2

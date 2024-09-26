@@ -1,0 +1,7 @@
+blend-mode: cutout
+height:
+  scale: 0
+normal:
+  noise: 1
+  method: sobel-low
+  strength: 1.9
